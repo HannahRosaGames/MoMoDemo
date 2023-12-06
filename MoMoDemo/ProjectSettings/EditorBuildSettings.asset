@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Start.unity
+    guid: 775326bcc939cff4096e9c7c6ddc9402
+  - enabled: 1
+    path: Assets/Scenes/Main.unity
+    guid: 933b150f537e8f648907a80978afe269
+  - enabled: 1
+    path: Assets/Scenes/DummyAdventure.unity
+    guid: 32c56e2b5b023d44cb55cceb938b0ad0
+  - enabled: 1
+    path: Assets/Scenes/EggBabySelect.unity
+    guid: 6767d1f141cf4c1478b2753d98b0be8f
+  - enabled: 1
+    path: Assets/Scenes/FruitNote.unity
+    guid: 8232e099a86c1df4895a361dd3eb6a39
+  - enabled: 1
+    path: Assets/Scenes/ItemNote.unity
+    guid: 61c701b8c87f28948a76174e60c738ba
+  - enabled: 1
+    path: Assets/Scenes/MonsterNote.unity
+    guid: a30b9082482e46346bef61696664562c
+  - enabled: 1
+    path: Assets/Scenes/MonsterSelect.unity
+    guid: da69cf39b726cd94a86d797b426fa8d2
+  - enabled: 1
+    path: Assets/Scenes/Notes.unity
+    guid: abcbd3baf5c713648ae907331b672b26
+  - enabled: 1
+    path: Assets/Scenes/PeopleNote.unity
+    guid: 0aae468d848d38b4e87b5e0513b03a88
+  - enabled: 1
+    path: Assets/Scenes/PlaceNote.unity
+    guid: bab009edf4612e04ea24a665560d7a94
+  - enabled: 1
+    path: Assets/Scenes/Quicktravel.unity
+    guid: 86798d78187e57545b0a481781e90e5d
+  - enabled: 1
+    path: Assets/Scenes/Setting.unity
+    guid: cc9677859024bae4b9e18712b1677ef3
+  m_configObjects:
+    com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: 7f6be44177ffa6542a07b343db10f310, type: 2}
+    com.unity.adaptiveperformance.samsung.android.provider_settings: {fileID: 11400000, guid: 6c58dbf9b01c72a4db54a1916de630f0, type: 2}
+    com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000, guid: b17d37163ba67dd459521d570fa0a5c3, type: 2}

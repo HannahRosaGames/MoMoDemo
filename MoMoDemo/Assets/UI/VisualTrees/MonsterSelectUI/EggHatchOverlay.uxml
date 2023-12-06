@@ -1,0 +1,20 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/Stylesheets/Menu.uss?fileID=7433441132597879392&amp;guid=f8330ab6c879e1c4b8f09f045cc9c2f7&amp;type=3#Menu" />
+    <Style src="project://database/Assets/UI/Stylesheets/Overlay.uss?fileID=7433441132597879392&amp;guid=ae12c3007ee979449829f5656bb88117&amp;type=3#Overlay" />
+    <Style src="project://database/Assets/UI/Stylesheets/Profile.uss?fileID=7433441132597879392&amp;guid=3f379a28a51f92d409658249a38ed343&amp;type=3#Profile" />
+    <ui:VisualElement class="overlayBackground">
+        <ui:VisualElement name="VisualElement" class="overlayCanvas">
+            <ui:Button text="X" display-tooltip-when-elided="true" name="CloseOverlay" class="sideButton closeButton" />
+            <ui:VisualElement name="VisualElement" style="align-items: center;">
+                <ui:VisualElement name="MonsterPicture" class="profilePicture" />
+                <ui:VisualElement class="profileNameHintContainter">
+                    <ui:VisualElement class="profileSpaceBeforeName" />
+                    <ui:Label tabindex="-1" display-tooltip-when-elided="true" name="MonsterName" class="profileMonsterName" />
+                    <ui:Button text="?" display-tooltip-when-elided="true" class="profileHelpButton" />
+                </ui:VisualElement>
+                <ui:Button text="Hatch" display-tooltip-when-elided="true" name="Hatch" class="profileActionButton" />
+                <ui:Button text="HatchAll" display-tooltip-when-elided="true" name="HatchAll" class="profileActionButton" style="margin-top: 20px;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

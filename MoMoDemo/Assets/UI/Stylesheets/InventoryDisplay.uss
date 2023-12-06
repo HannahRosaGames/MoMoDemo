@@ -1,0 +1,120 @@
+.selectedItem {
+    border-left-color: rgb(236, 226, 8);
+    border-right-color: rgb(236, 226, 8);
+    border-top-color: rgb(236, 226, 8);
+    border-bottom-color: rgb(236, 226, 8);
+    border-left-width: 3px;
+    border-right-width: 3px;
+    border-top-width: 3px;
+    border-bottom-width: 3px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.inventoryLabel {
+    color: rgb(255, 255, 255);
+    font-size: 8px;
+}
+
+.inventoryPicture {
+    flex-grow: 1;
+    background-color: rgb(188, 188, 188);
+}
+
+.inventoryItem {
+    width: 50px;
+    height: 70px;
+    margin-left: 11px;
+    margin-right: 11px;
+    margin-top: 11px;
+    margin-bottom: 11px;
+    padding-left: 3px;
+    padding-right: 3px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.inventoryDisplay {
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.fruitAttributeLabel {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    color: rgb(255, 255, 255);
+    -unity-font-style: bold;
+    font-size: 12px;
+}
+
+.fruitAttributes {
+    background-color: rgba(0, 0, 0, 0);
+    width: 100%;
+    height: 60px;
+    justify-content: space-between;
+    top: 15px;
+    align-items: center;
+}
+
+.fruitPicture {
+    background-color: rgb(188, 188, 188);
+    width: 40px;
+    height: 40px;
+    top: 5px;
+}
+
+.fruitName {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    color: rgb(255, 255, 255);
+    font-size: 10px;
+}
+
+.fruitDisplay {
+    height: 100%;
+    width: 70px;
+    align-items: center;
+}
+
+.fruitInventoryItem {
+    width: 40px;
+    align-items: center;
+    margin-left: 8.5px;
+    margin-right: 8.5px;
+    margin-top: 9px;
+    margin-bottom: 2px;
+    height: 43px;
+}
+
+.fruitInventoryPicture {
+    background-color: rgb(188, 188, 188);
+    width: 25px;
+    height: 25px;
+}
+
+.fruitInventoryLabel {
+    color: rgb(255, 255, 255);
+    -unity-font-style: bold;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}

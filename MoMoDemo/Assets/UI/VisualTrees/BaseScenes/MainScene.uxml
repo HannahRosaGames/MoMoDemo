@@ -1,0 +1,18 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/Stylesheets/Menu.uss?fileID=7433441132597879392&amp;guid=f8330ab6c879e1c4b8f09f045cc9c2f7&amp;type=3#Menu" />
+    <ui:VisualElement class="background mainCanvas" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);">
+        <ui:VisualElement name="MainCanvas" class="mainCanvas" style="flex-grow: 1; background-color: rgba(0, 255, 0, 0.24);">
+            <ui:VisualElement class="menuSidePanel" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);">
+                <ui:Button text="S" display-tooltip-when-elided="true" name="Setting" class="sideButton" />
+                <ui:Button text="M" display-tooltip-when-elided="true" name="MonsterSelect" class="sideButton" />
+            </ui:VisualElement>
+            <ui:VisualElement class="menuCenterPanel" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);">
+                <ui:Button text="GO" display-tooltip-when-elided="true" name="DummyAdventure" class="cyanButton" />
+            </ui:VisualElement>
+            <ui:VisualElement class="menuSidePanel" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);">
+                <ui:Button text="Q" display-tooltip-when-elided="true" name="Quicktravel" class="sideButton" style="align-self: flex-end;" />
+                <ui:Button text="N" display-tooltip-when-elided="true" name="Notes" class="sideButton" style="align-self: flex-end;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

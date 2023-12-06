@@ -1,0 +1,36 @@
+.profilePicture {
+    width: 80px;
+    height: 80px;
+    background-color: rgb(191, 188, 188);
+    top: 50px;
+}
+
+.profileActionButton {
+    top: 95px;
+}
+
+.profileNameHintContainter {
+    top: 60px;
+    height: 26px;
+    flex-direction: row;
+}
+
+.profileSpaceBeforeName {
+    flex-grow: 1;
+    background-color: rgba(0, 0, 0, 0);
+    width: 26px;
+}
+
+.profileMonsterName {
+    -unity-font-style: bold;
+    color: rgb(255, 255, 255);
+}
+
+.profileHelpButton {
+    width: 26px;
+    height: 26px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}

@@ -1,0 +1,43 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/Stylesheets/Menu.uss?fileID=7433441132597879392&amp;guid=f8330ab6c879e1c4b8f09f045cc9c2f7&amp;type=3#Menu" />
+    <Style src="project://database/Assets/UI/Stylesheets/InventoryDisplay.uss?fileID=7433441132597879392&amp;guid=b170e6e6b0e84c447917cf979bf334da&amp;type=3#InventoryDisplay" />
+    <Style src="project://database/Assets/UI/Stylesheets/Profile.uss?fileID=7433441132597879392&amp;guid=3f379a28a51f92d409658249a38ed343&amp;type=3#Profile" />
+    <ui:VisualElement name="MainCanvas" class="mainCanvas background" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); flex-direction: column;">
+        <ui:VisualElement style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); width: 100%; height: 25%; flex-direction: row;">
+            <ui:VisualElement class="menuSidePanel" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);" />
+            <ui:VisualElement class="menuTitel" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); height: 100%;">
+                <ui:Label tabindex="-1" text="Monsters" display-tooltip-when-elided="true" class="Titel" />
+            </ui:VisualElement>
+            <ui:VisualElement name="VisualElement" class="menuSidePanel" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);">
+                <ui:Button text="X" display-tooltip-when-elided="true" name="Exit" class="sideButton" style="align-self: flex-end;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); width: 100%; height: 75%;">
+            <ui:VisualElement name="VisualElement" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); width: 100%; height: 10%; flex-direction: row; justify-content: space-around;">
+                <ui:Button text="Grown Monster" display-tooltip-when-elided="true" name="GrownMonsterOn" style="width: 45%; height: 80%; background-color: rgb(14, 255, 0);" />
+                <ui:Button text="Eggs and Babys" display-tooltip-when-elided="true" name="EggsBabysOn" style="width: 45%; height: 80%; background-color: rgb(191, 188, 188);" />
+            </ui:VisualElement>
+            <ui:VisualElement style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); width: 100%; height: 90%; justify-content: center; align-items: center;">
+                <ui:VisualElement name="GrownMonster" style="background-color: rgba(14, 255, 0, 0.38); width: 90%; height: 90%; align-items: center;">
+                    <ui:VisualElement name="MonsterPicture" class="profilePicture" />
+                    <ui:VisualElement name="VisualElement" class="profileNameHintContainter">
+                        <ui:VisualElement class="profileSpaceBeforeName" />
+                        <ui:Label tabindex="-1" text="No active Monster" display-tooltip-when-elided="true" name="MonsterName" />
+                        <ui:Button text="?" display-tooltip-when-elided="true" name="Help" class="profileHelpButton" />
+                    </ui:VisualElement>
+                    <ui:Button text="Select" name="MonsterAction" class="profileActionButton" />
+                </ui:VisualElement>
+                <ui:VisualElement name="EggsBabys" style="background-color: rgba(176, 48, 153, 0.38); width: 90%; height: 90%; display: none;">
+                    <ui:VisualElement name="Eggs" style="width: 100%; height: 50%;">
+                        <ui:Label tabindex="-1" text="  Eggs" display-tooltip-when-elided="true" style="color: rgb(255, 255, 255); -unity-font-style: bold; font-size: 16px;" />
+                        <ui:VisualElement name="InventoryDisplayEgg" class="inventoryDisplay" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="Babys" style="width: 100%; height: 50%;">
+                        <ui:Label tabindex="-1" text="  Babies" display-tooltip-when-elided="true" style="color: rgb(255, 255, 255); -unity-font-style: bold; font-size: 16px;" />
+                        <ui:VisualElement name="InventoryDisplayBaby" class="inventoryDisplay" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
