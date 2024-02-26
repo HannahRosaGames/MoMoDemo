@@ -53,7 +53,7 @@ namespace Momo.PanelManager.SceneUI
 
         private void ChangeToMonsterSelectScene(ClickEvent evt)
         {
-            SceneManager.LoadScene("MonsterSelect");
+            SceneManager.LoadScene("MonsterManager");
         }
 
 
@@ -65,7 +65,7 @@ namespace Momo.PanelManager.SceneUI
 
         private void ChangeToDummyAdventureScene(ClickEvent evt)
         {
-            SceneManager.LoadScene("DummyAdventure");
+            SceneManager.LoadScene("TestArea1");
         }
     }
 }

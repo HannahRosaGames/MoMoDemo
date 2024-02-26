@@ -1,9 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Momo.Types;
-using Momo.PlayerInformation;
+using Momo.Player;
 using System;
+using Momo.ScriptableObjects;
 
 namespace Momo.Adventure
 {
@@ -55,18 +55,17 @@ namespace Momo.Adventure
             Player.Instance.discovered.Found(foundGrownMonster);
             */
 
-            foreach (int i in Enum.GetValues(typeof(FruitType)))
-                if(i != 0)
-                    Player.Instance.inventory.AddItemToInventory((FruitType)i, 10);
-            foreach (int i in Enum.GetValues(typeof(BaseMonsterType)))
-                Player.Instance.inventory.AddItemToInventory((BaseMonsterType)i, false, 10);
+            foreach (Fruit fruit in AllScriptableObjects.GetAllFruits())
+                CentralPlayer.Instance.inventory.AddItemToInventory(fruit, 10);
+            foreach (Egg egg in AllScriptableObjects.GetAllEggs())
+                CentralPlayer.Instance.inventory.AddItemToInventory(egg, 10);
 
-            GrownMonsterType activeMonster = Player.Instance.GetActiveMonster();
-            if (activeMonster == GrownMonsterType.None)
+            GrownMonster activeMonster = CentralPlayer.Instance.GetActiveMonster();
+            if (activeMonster == null)
                 Debug.Log("No Monster was used up.");
             else
                 Debug.Log(activeMonster + " run away.");
-            Player.Instance.UseUpActiveMonster();
+            CentralPlayer.Instance.UseUpActiveMonster();
         }
     }
 }

@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb87c72b407fb8645b3615e20fe096cc, type: 3}
+  m_Name: Avocado
+  m_EditorClassIdentifier: 
+  fruitName: Avocado
+  attributes:
+  - {fileID: 11400000, guid: d859a87bb5744d24f8fcc1451810c0a4, type: 2}
+  - {fileID: 11400000, guid: fbc154b90554d7d4f9dab2cbb948ff4c, type: 2}
+  - {fileID: 11400000, guid: 11eb44142c6e57341a3e6a24184c59c7, type: 2}
+  fruitColor: {r: 0.1, g: 0.39, b: 0, a: 1}
+  fruitPrimeID: 17
