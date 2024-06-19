@@ -1,0 +1,46 @@
+.loot {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+}
+
+.fruit {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.egg {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 10px;
+}
+
+.adventureButton {
+    width: 50%;
+    height: 70%;
+    border-left-color: rgb(255, 255, 255);
+    border-right-color: rgb(255, 255, 255);
+    border-top-color: rgb(255, 255, 255);
+    border-bottom-color: rgb(255, 255, 255);
+    background-color: rgb(41, 38, 38);
+    color: rgb(255, 254, 254);
+    -unity-font-style: bold;
+    font-size: 16px;
+    border-left-width: 3px;
+    border-right-width: 3px;
+    border-top-width: 3px;
+    border-bottom-width: 3px;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+.adventureTitle {
+    color: rgb(221, 221, 221);
+    -unity-font-style: bold;
+    -unity-text-align: upper-center;
+}

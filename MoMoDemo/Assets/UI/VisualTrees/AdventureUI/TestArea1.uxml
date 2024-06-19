@@ -1,6 +1,0 @@
-<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
-    <ui:VisualElement name="FruitSpot1" style="background-color: rgba(0, 0, 0, 0); width: 40px; height: 40px; position: absolute; left: 130px; top: 300px;" />
-    <ui:VisualElement name="FruitSpot2" style="background-color: rgba(0, 0, 0, 0); width: 40px; height: 40px; position: absolute; left: 220px; top: 250px;" />
-    <ui:VisualElement name="FruitSpot3" style="background-color: rgba(0, 0, 0, 0); width: 40px; height: 40px; position: absolute; left: 40px; top: 60px;" />
-    <ui:VisualElement name="FruitSpot4" style="background-color: rgba(0, 0, 0, 0); width: 40px; height: 40px; position: absolute; left: 240px; top: 90px;" />
-</ui:UXML>

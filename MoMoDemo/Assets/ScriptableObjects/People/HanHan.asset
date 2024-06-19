@@ -12,8 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dbafbd533280c2a47bdc6090c947fc52, type: 3}
   m_Name: HanHan
   m_EditorClassIdentifier: 
-  peopleType: 2
-  peopleName: HanHan
-  peopleDescription: A little woman
-  peopleHint: no clue
-  peopleColor: {r: 0, g: 0, b: 0, a: 0}
+  Name: HanHan
+  Description: A little woman.
+  Hint: no clue
+  Color: {r: 0.6981132, g: 0.049394794, b: 0.5689707, a: 1}

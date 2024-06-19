@@ -12,4 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97612ebd9bcf3ad48badeea953bf484f, type: 3}
   m_Name: FlowBear
   m_EditorClassIdentifier: 
-  grownMonsterName: Flower Bear
+  Name: Flower Bear
+  Range: 1

@@ -12,4 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97612ebd9bcf3ad48badeea953bf484f, type: 3}
   m_Name: NormGoat
   m_EditorClassIdentifier: 
-  grownMonsterName: Normal Goat
+  Name: Normal Goat
+  Range: 1

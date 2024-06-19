@@ -12,8 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dbafbd533280c2a47bdc6090c947fc52, type: 3}
   m_Name: Susi
   m_EditorClassIdentifier: 
-  peopleType: 1
-  peopleName: Susi
-  peopleDescription: That's Susi, obvious
-  peopleHint: no clue
-  peopleColor: {r: 0, g: 0, b: 0, a: 0}
+  Name: Susi
+  Description: That's Susi. Obvious.
+  Hint: no clue
+  Color: {r: 1, g: 1, b: 1, a: 1}

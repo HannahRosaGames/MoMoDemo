@@ -133,7 +133,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2977159}
   - component: {fileID: 2977158}
-  - component: {fileID: 2977157}
+  - component: {fileID: 2977161}
+  - component: {fileID: 2977160}
   m_Layer: 5
   m_Name: MonsterSelectOverlayUI
   m_TagString: Untagged
@@ -141,19 +142,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &2977157
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2977156}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3f1985a89fbd02147bf8fb0818ff877c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  monsterManagerGameObject: {fileID: 474563891}
 --- !u!114 &2977158
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -185,6 +173,30 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2977160
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2977156}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1dce3d5729dd33f4087f3741de107b16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2977161
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2977156}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6aa0c36e77eeb29499b4e62e26e62c53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &357434852
 GameObject:
   m_ObjectHideFlags: 0
@@ -195,7 +207,8 @@ GameObject:
   m_Component:
   - component: {fileID: 357434855}
   - component: {fileID: 357434854}
-  - component: {fileID: 357434853}
+  - component: {fileID: 357434857}
+  - component: {fileID: 357434856}
   m_Layer: 5
   m_Name: EggHatchOverlayUI
   m_TagString: Untagged
@@ -203,19 +216,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &357434853
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 357434852}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c7fccec06e482f2408d2fc6754a26abd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  monsterManagerGameObject: {fileID: 474563891}
 --- !u!114 &357434854
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -247,48 +247,28 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &474563891
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 474563892}
-  - component: {fileID: 474563893}
-  m_Layer: 0
-  m_Name: MonsterManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &474563892
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 474563891}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &474563893
+--- !u!114 &357434856
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 474563891}
+  m_GameObject: {fileID: 357434852}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7cde315a99ddbdb4688361b1599440cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &357434857
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 357434852}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 76c451e21fa4b884eb2fb571df8e7ae2, type: 3}
+  m_Script: {fileID: 11500000, guid: 9bbb4190d52823647bf1f149440435fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &578736619
@@ -301,7 +281,8 @@ GameObject:
   m_Component:
   - component: {fileID: 578736622}
   - component: {fileID: 578736621}
-  - component: {fileID: 578736620}
+  - component: {fileID: 578736624}
+  - component: {fileID: 578736623}
   m_Layer: 5
   m_Name: BabyFeetOverlayUI
   m_TagString: Untagged
@@ -309,19 +290,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &578736620
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 578736619}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c59d6dc27f8af9d4ea3bcd378fdc2789, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  monsterManagerGameObject: {fileID: 474563891}
 --- !u!114 &578736621
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -353,6 +321,30 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &578736623
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 578736619}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51db2bcc69d3bbf41b19df3bf33fa45d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &578736624
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 578736619}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f85d75456476c5044af3980cb4fa9eb7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1002884305
 GameObject:
   m_ObjectHideFlags: 0
@@ -456,8 +448,9 @@ GameObject:
   - component: {fileID: 1188709405}
   - component: {fileID: 1188709404}
   - component: {fileID: 1188709407}
+  - component: {fileID: 1188709406}
   m_Layer: 5
-  m_Name: MonsterManagerUI
+  m_Name: MonsterManagerMainUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -494,6 +487,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1188709406
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1188709402}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51ded6b44f9511743a0fb6a9047809f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1188709407
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -503,69 +508,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 1188709402}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b0a831125536ff34c89f8136aa811131, type: 3}
+  m_Script: {fileID: 11500000, guid: 1ffe4a949e2e35b4c9249a0428cf3254, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  monsterManagerGameObject: {fileID: 474563891}
---- !u!1 &1404235943
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1404235946}
-  - component: {fileID: 1404235945}
-  - component: {fileID: 1404235944}
-  m_Layer: 5
-  m_Name: NewObtainedOverlayUI
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1404235944
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1404235943}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a2253f7fbbf6b5043992283f7bbb394c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  monsterManagerGameObject: {fileID: 474563891}
---- !u!114 &1404235945
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1404235943}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 19102, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_PanelSettings: {fileID: 11400000, guid: 56e17f541daa8b54c9dd475490ff7003, type: 2}
-  m_ParentUI: {fileID: 0}
-  sourceAsset: {fileID: 9197481963319205126, guid: 8781737d108f2b7469b9004f9ac2cf6d, type: 3}
-  m_SortingOrder: 1
---- !u!4 &1404235946
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1404235943}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

@@ -12,8 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dbafbd533280c2a47bdc6090c947fc52, type: 3}
   m_Name: YouDon'tSeeMe
   m_EditorClassIdentifier: 
-  peopleType: 5
-  peopleName: YouDon'tSeeMe
-  peopleDescription: The 'Don't' is just filler
-  peopleHint: no clue
-  peopleColor: {r: 0, g: 0, b: 0, a: 0}
+  Name: YouDon'tSeeMe
+  Description: The Don't is just a title.
+  Hint: no clue
+  Color: {r: 0, g: 0, b: 0, a: 1}

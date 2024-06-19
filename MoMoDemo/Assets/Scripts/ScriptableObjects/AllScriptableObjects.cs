@@ -10,8 +10,10 @@ namespace Momo.ScriptableObjects
         private static List<Egg> allEggs = new List<Egg>();
         private static List<BabyMonster> allBabyMonster = new List<BabyMonster>();
         private static List<GrownMonster> allGrownMonster = new List<GrownMonster>();
-        private static List<Attribute> allAttributes = new List<Attribute>();
+        private static List<Element> allElements = new List<Element>();
         private static List<People> allPeople = new List<People>();
+        private static List<Area> allAreas = new List<Area>();
+        private static List<SpawnSpot> allSpawnSpots = new List<SpawnSpot>();
 
         static AllScriptableObjects()
         {
@@ -19,8 +21,10 @@ namespace Momo.ScriptableObjects
             FillAllEggs();
             FillAllBabyMonster();
             FillAllGrownMonster();
-            FillAllAttributes();
+            FillAllElements();
             FillAllPeople();
+            FillAllAreas();
+            FillAllSpawnSpots();
         }
 
         #region Public Functions
@@ -40,13 +44,21 @@ namespace Momo.ScriptableObjects
         {
             return allGrownMonster;
         }
-        public static List<Attribute> GetAllAttributes()
+        public static List<Element> GetAllElements()
         {
-            return allAttributes;
+            return allElements;
         }
         public static List<People> GetAllPeople()
         {
             return allPeople;
+        }
+        public static List<Area> GetAllAreas()
+        {
+            return allAreas;
+        }
+        public static List<SpawnSpot> GetAllSpawnSpots()
+        {
+            return allSpawnSpots;
         }
         #endregion
 
@@ -76,7 +88,7 @@ namespace Momo.ScriptableObjects
         private static void FillAllBabyMonster()
         {
             allBabyMonster.Clear();
-            string[] babyMonsterAssetNames = FindAllScriptableObjects("Fruits");
+            string[] babyMonsterAssetNames = FindAllScriptableObjects("BabyMonster");
             foreach (string assetName in babyMonsterAssetNames)
             {
                 string assetPath = AssetDatabase.GUIDToAssetPath(assetName);
@@ -87,7 +99,7 @@ namespace Momo.ScriptableObjects
         private static void FillAllGrownMonster()
         {
             allGrownMonster.Clear();
-            string[] grownMonsterAssetNames = FindAllScriptableObjects("Fruits");
+            string[] grownMonsterAssetNames = FindAllScriptableObjects("GrownMonster");
             foreach (string assetName in grownMonsterAssetNames)
             {
                 string assetPath = AssetDatabase.GUIDToAssetPath(assetName);
@@ -95,26 +107,48 @@ namespace Momo.ScriptableObjects
                 allGrownMonster.Add(grownMonster);
             }
         }
-        private static void FillAllAttributes()
+        private static void FillAllElements()
         {
-            allAttributes.Clear();
-            string[] attributesAssetNames = FindAllScriptableObjects("Attributes");
-            foreach (string assetName in attributesAssetNames)
+            allElements.Clear();
+            string[] elementAssetNames = FindAllScriptableObjects("Elements");
+            foreach (string elementName in elementAssetNames)
             {
-                string assetPath = AssetDatabase.GUIDToAssetPath(assetName);
-                Attribute attribute = AssetDatabase.LoadAssetAtPath<Attribute>(assetPath);
-                allAttributes.Add(attribute);
+                string elementPath = AssetDatabase.GUIDToAssetPath(elementName);
+                Element element = AssetDatabase.LoadAssetAtPath<Element>(elementPath);
+                allElements.Add(element);
             }
         }
         private static void FillAllPeople()
         {
             allPeople.Clear();
-            string[] peopleAssetNames = FindAllScriptableObjects("Fruits");
+            string[] peopleAssetNames = FindAllScriptableObjects("People");
             foreach (string assetName in peopleAssetNames)
             {
                 string assetPath = AssetDatabase.GUIDToAssetPath(assetName);
                 People people = AssetDatabase.LoadAssetAtPath<People>(assetPath);
                 allPeople.Add(people);
+            }
+        }
+        private static void FillAllAreas()
+        {
+            allAreas.Clear();
+            string[] areaAssetNames = FindAllScriptableObjects("Areas");
+            foreach (string assetName in areaAssetNames)
+            {
+                string assetPath = AssetDatabase.GUIDToAssetPath(assetName);
+                Area area = AssetDatabase.LoadAssetAtPath<Area>(assetPath);
+                allAreas.Add(area);
+            }
+        }
+        private static void FillAllSpawnSpots()
+        {
+            allSpawnSpots.Clear();
+            string[] spawnSpotAssetNames = FindAllScriptableObjects("SpawnSpots");
+            foreach (string assetName in spawnSpotAssetNames)
+            {
+                string assetPath = AssetDatabase.GUIDToAssetPath(assetName);
+                SpawnSpot spawnSpot = AssetDatabase.LoadAssetAtPath<SpawnSpot>(assetPath);
+                allSpawnSpots.Add(spawnSpot);
             }
         }
 

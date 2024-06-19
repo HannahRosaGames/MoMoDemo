@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb87c72b407fb8645b3615e20fe096cc, type: 3}
   m_Name: Orange
   m_EditorClassIdentifier: 
-  fruitName: Orange
-  attributes:
+  Name: Orange
+  Elements:
   - {fileID: 11400000, guid: 11eb44142c6e57341a3e6a24184c59c7, type: 2}
   - {fileID: 11400000, guid: 72febf985231ebc4faa8d628c8074f03, type: 2}
   - {fileID: 11400000, guid: 7e6a027c8585f7c4caadd6f98a0c4db9, type: 2}
-  fruitColor: {r: 0.8, g: 0.43, b: 0, a: 1}
-  fruitPrimeID: 11
+  Color: {r: 0.8, g: 0.43137255, b: 0, a: 1}
+  PrimeID: 11

@@ -12,8 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dbafbd533280c2a47bdc6090c947fc52, type: 3}
   m_Name: LittleGoblin
   m_EditorClassIdentifier: 
-  peopleType: 4
-  peopleName: Little Goblin
-  peopleDescription: Also a little man
-  peopleHint: no clue
-  peopleColor: {r: 0, g: 0, b: 0, a: 0}
+  Name: Little Goblin
+  Description: Also a little man.
+  Hint: no clue
+  Color: {r: 0.04643034, g: 0.6226415, b: 0, a: 1}

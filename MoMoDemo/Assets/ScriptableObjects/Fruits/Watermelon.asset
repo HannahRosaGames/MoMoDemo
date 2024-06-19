@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb87c72b407fb8645b3615e20fe096cc, type: 3}
   m_Name: Watermelon
   m_EditorClassIdentifier: 
-  fruitName: Watermelon
-  attributes:
+  Name: Watermelon
+  Elements:
   - {fileID: 11400000, guid: 72febf985231ebc4faa8d628c8074f03, type: 2}
   - {fileID: 11400000, guid: a498b3ddc8654b84891310e665b2c1b6, type: 2}
   - {fileID: 11400000, guid: 11eb44142c6e57341a3e6a24184c59c7, type: 2}
-  fruitColor: {r: 0.21, g: 0.61, b: 0.22, a: 1}
-  fruitPrimeID: 5
+  Color: {r: 0.21176471, g: 0.6117647, b: 0.21960784, a: 1}
+  PrimeID: 5

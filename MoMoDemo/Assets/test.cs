@@ -11,7 +11,7 @@ public class test : MonoBehaviour
         List<Fruit> allFruits = AllScriptableObjects.GetAllFruits();
         foreach (Fruit fruit in allFruits)
         {
-            Debug.Log(fruit.fruitName);
+            Debug.Log(fruit.Name);
         }
     }
 

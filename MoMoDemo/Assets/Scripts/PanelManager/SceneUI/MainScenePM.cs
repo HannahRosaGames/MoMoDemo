@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UIElements;
+using Momo.ScriptableObjects;
 
 namespace Momo.PanelManager.SceneUI
 {
@@ -21,13 +22,13 @@ namespace Momo.PanelManager.SceneUI
             quicktravel = uiDocument.rootVisualElement.Q("Quicktravel") as Button;
             monsterSelect = uiDocument.rootVisualElement.Q("MonsterSelect") as Button;
             notes = uiDocument.rootVisualElement.Q("Notes") as Button;
-            dummyAdventure = uiDocument.rootVisualElement.Q("DummyAdventure") as Button;
+            dummyAdventure = uiDocument.rootVisualElement.Q("Adventure") as Button;
 
             setting.RegisterCallback<ClickEvent>(ChangeToSettingScene);
             quicktravel.RegisterCallback<ClickEvent>(ChangeToQuicktravelScene);
             monsterSelect.RegisterCallback<ClickEvent>(ChangeToMonsterSelectScene);
             notes.RegisterCallback<ClickEvent>(ChangeToNotesScene);
-            dummyAdventure.RegisterCallback<ClickEvent>(ChangeToDummyAdventureScene);
+            dummyAdventure.RegisterCallback<ClickEvent>(ChangeToAdventureScene);
         }
         private void OnDisable()
         {
@@ -35,7 +36,7 @@ namespace Momo.PanelManager.SceneUI
             quicktravel.UnregisterCallback<ClickEvent>(ChangeToQuicktravelScene);
             monsterSelect.UnregisterCallback<ClickEvent>(ChangeToMonsterSelectScene);
             notes.UnregisterCallback<ClickEvent>(ChangeToNotesScene);
-            dummyAdventure.UnregisterCallback<ClickEvent>(ChangeToDummyAdventureScene);
+            dummyAdventure.UnregisterCallback<ClickEvent>(ChangeToAdventureScene);
         }
 
 
@@ -63,9 +64,9 @@ namespace Momo.PanelManager.SceneUI
         }
 
 
-        private void ChangeToDummyAdventureScene(ClickEvent evt)
+        private void ChangeToAdventureScene(ClickEvent evt)
         {
-            SceneManager.LoadScene("TestArea1");
+            SceneManager.LoadScene("Adventure");
         }
     }
 }

@@ -12,4 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: caa90bf9d5f18154f95844ec5fa40c4b, type: 3}
   m_Name: DuckEgg
   m_EditorClassIdentifier: 
-  eggName: Duck Egg
+  Name: Duck Egg
+  Into: {fileID: 11400000, guid: 354edef2355fd894685552a7ed0d67ec, type: 2}
+  Color: {r: 0.901, g: 0.729, b: 0.454, a: 1}
