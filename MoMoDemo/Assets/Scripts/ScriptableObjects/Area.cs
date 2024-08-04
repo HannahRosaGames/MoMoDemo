@@ -17,6 +17,13 @@ namespace Momo.ScriptableObjects
         {
             return SpecialWay.available;
         }
+        public List<Loot> GetEndLoot()
+        {
+            List<Loot> endLoot = new List<Loot>();
+            foreach (SpawnSpot spot in SpawnSpots)
+                endLoot.Add(spot.GenerateLootCertain());
+            return endLoot;
+        }
     }
 
     [System.Serializable]

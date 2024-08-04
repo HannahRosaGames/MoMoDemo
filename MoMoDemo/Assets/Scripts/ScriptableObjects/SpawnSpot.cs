@@ -13,11 +13,16 @@ namespace Momo.ScriptableObjects
         public Fruit[] FruitsDistributionChances;
         public Egg[] EggDistributionChances;
 
-        public Loot GenerateLoot()
+        public Loot GenerateLootUncertain()
         {
             if (!IsLootGenerated())
                 return null;
 
+            return GenerateLootCertain();
+        }
+
+        public Loot GenerateLootCertain()
+        {
             List<Loot> loot = new List<Loot>();
             loot = EggDistributionChances.ToList<Loot>();
             loot.AddRange(FruitsDistributionChances.ToList<Loot>());

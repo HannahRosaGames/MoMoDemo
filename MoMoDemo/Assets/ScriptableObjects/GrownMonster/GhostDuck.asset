@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: GhostDuck
   m_EditorClassIdentifier: 
   Name: Ghost Duck
-  Range: 1
+  Range: 13

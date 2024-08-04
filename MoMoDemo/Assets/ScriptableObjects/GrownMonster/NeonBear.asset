@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: NeonBear
   m_EditorClassIdentifier: 
   Name: Neon Bear
-  Range: 1
+  Range: 10

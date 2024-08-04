@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: FlowDuck
   m_EditorClassIdentifier: 
   Name: Flower Duck
-  Range: 1
+  Range: 3

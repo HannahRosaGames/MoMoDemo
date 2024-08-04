@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: CamoDuck
   m_EditorClassIdentifier: 
   Name: Camouflage Duck
-  Range: 1
+  Range: 4

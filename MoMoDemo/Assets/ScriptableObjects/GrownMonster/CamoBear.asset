@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: CamoBear
   m_EditorClassIdentifier: 
   Name: Camouflage Bear
-  Range: 1
+  Range: 8

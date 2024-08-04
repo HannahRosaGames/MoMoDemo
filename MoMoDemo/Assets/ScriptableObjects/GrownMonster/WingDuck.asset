@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: WingDuck
   m_EditorClassIdentifier: 
   Name: Winged Duck
-  Range: 1
+  Range: 28

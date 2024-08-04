@@ -77,7 +77,7 @@ namespace Momo.AdventureScene.Panel
         }
         private void CreateSpawnSpot(SpawnSpot spawnSpot)
         {
-            Loot loot = spawnSpot.GenerateLoot();
+            Loot loot = spawnSpot.GenerateLootUncertain();
 
             if (loot == null)
                 return;

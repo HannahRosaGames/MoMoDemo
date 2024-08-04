@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: NormGoat
   m_EditorClassIdentifier: 
   Name: Normal Goat
-  Range: 1
+  Range: 15

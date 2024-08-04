@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: WingGoat
   m_EditorClassIdentifier: 
   Name: Winged Goat
-  Range: 1
+  Range: 30

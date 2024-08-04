@@ -41,17 +41,19 @@ namespace Momo.AdventureScene
         public void OnGoFurtherClicked()
         {
             Area nextArea = currentArea.FollowingArea;
-            currentArea = nextArea;
-            if (IsValidToGoOn())
+            if (IsValidToGoOn(nextArea))
+            {
+                currentArea = nextArea;
                 GoOntoNextArea();
+            }
             else
                 SummarizeAdventure();
         }
 
-        private bool IsValidToGoOn()
+        private bool IsValidToGoOn(Area area)
         {
-            if (currentArea == null) return false;
-            if (currentArea.RangeNeeded > Player.Instance.GetRange()) return false;
+            if (area == null) return false;
+            if (area.RangeNeeded > Player.Instance.GetRange()) return false;
             return true;
         }
 
@@ -62,8 +64,31 @@ namespace Momo.AdventureScene
 
         private void SummarizeAdventure()
         {
-            LootDisplay.Instance.OpenOverlay(foundFruits, foundEggs);
+            AddEndLootToFoundFruitsAndEggs();
+            AddFoundFruitsAndEggsToInventory();
+
+            LootDisplay.Instance.OpenOverlay(foundFruits, foundEggs, currentArea);
             HideGoFurtherButton?.Invoke();
+        }
+
+        private void AddEndLootToFoundFruitsAndEggs()
+        {
+            List<Loot> endLoot = currentArea.GetEndLoot();
+            foreach(Loot loot in endLoot)
+            {
+                if (loot.GetType() == typeof(Fruit))
+                    AddFruitToFroundFruits(loot as Fruit);
+                else if (loot.GetType() == typeof(Egg))
+                    AddEggToFoundEggs(loot as Egg);
+            }
+        }
+
+        private void AddFoundFruitsAndEggsToInventory()
+        {
+            foreach(KeyValuePair<Fruit,int> fruit in foundFruits)
+                Player.Instance.Inventory.AddItemToInventory(fruit.Key, fruit.Value);
+            foreach (KeyValuePair<Egg, int> egg in foundEggs)
+                Player.Instance.Inventory.AddItemToInventory(egg.Key, egg.Value);
         }
 
         public void EndAdventure()
@@ -74,17 +99,22 @@ namespace Momo.AdventureScene
 
         public void OnFruitClicked(Fruit fruit)
         {
-            Player.Instance.Inventory.AddItemToInventory(fruit);
-
+            AddFruitToFroundFruits(fruit);
+        }
+        public void OnEggClicked(Egg egg)
+        {
+            AddEggToFoundEggs(egg);
+        }
+        private void AddFruitToFroundFruits(Fruit fruit)
+        {
             if (foundFruits.ContainsKey(fruit))
                 foundFruits[fruit] += 1;
             else
                 foundFruits.Add(fruit, 1);
         }
-        public void OnEggClicked( Egg egg)
-        {
-            Player.Instance.Inventory.AddItemToInventory(egg);
 
+        private void AddEggToFoundEggs(Egg egg)
+        {
             if (foundEggs.ContainsKey(egg))
                 foundEggs[egg] += 1;
             else

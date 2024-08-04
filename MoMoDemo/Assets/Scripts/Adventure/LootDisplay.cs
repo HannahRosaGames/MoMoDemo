@@ -28,10 +28,11 @@ namespace Momo.AdventureScene
         private Dictionary<Fruit, int> foundFruits;
         private Dictionary<Egg, int> foundEggs;
 
-        public void OpenOverlay(Dictionary<Fruit, int> foundFruits, Dictionary<Egg, int> foundEggs)
+        public void OpenOverlay(Dictionary<Fruit, int> foundFruits, Dictionary<Egg, int> foundEggs, Area activeArea)
         {
             this.foundFruits = foundFruits;
             this.foundEggs = foundEggs;
+            
 
             GetComponent<UIDocument>().enabled = true;
             GetComponent<LootPanel>().enabled = true;
